@@ -8,13 +8,11 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 '''
 
-possible_num = 0
+num = 2520
 while True:
-    failed = True
-    possible_num += 1
-    for i in range(1,20):
-        if possible_num % i != 0:
+    num += 20
+    for i in range(10,20):
+        if num % i != 0:
             break
-        if i == 20:
-            print(possible_num)
-            break
+        if i == 19:
+            print(f"Found --> {num}") ; exit(0)
