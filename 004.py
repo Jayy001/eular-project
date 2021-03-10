@@ -10,7 +10,7 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 '''
 
-palindromes = []
+palindromes = set([])
 for a in range(100,999):
     for b in range(100,999):
         num = a*b
